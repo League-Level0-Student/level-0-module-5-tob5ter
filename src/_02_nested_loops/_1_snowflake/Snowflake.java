@@ -2,25 +2,29 @@ package _02_nested_loops._1_snowflake;
 
 import java.awt.Color;
 
+import org.jointheleague.graphical.robot.Robot;
+
 
 public class Snowflake {
 	
 	public static void main(String[] args) {
 
 		// #1. Make a new Robot
-
+		Robot rob = new Robot("batman");
+		
 
 		// #2. Set your robot’s position to x=300 and y=300
-
+		rob.setX(300);
+		rob.setY(300);
 
 		// #3. Put the robot's pen down
-
+		rob.penDown();
 
 		// #4. Set the robot’s speed to 5
-
+		rob.setSpeed(5);
 
 		// #5. use a for loop below to do everything ( #6, #7, #8, #9, #12, #13, #14 ) 6 times (use i as the counter)
-
+		
 			
 			// #6. Set the pen color to black
 
