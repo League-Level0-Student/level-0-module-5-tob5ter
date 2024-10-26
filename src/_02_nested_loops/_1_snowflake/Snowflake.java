@@ -10,7 +10,8 @@ public class Snowflake {
 	public static void main(String[] args) {
 
 		// #1. Make a new Robot
-		Robot rob = new Robot("batman");
+		Robot rob = new Robot("mini");
+		
 		
 
 		// #2. Set your robot’s position to x=300 and y=300
@@ -21,11 +22,25 @@ public class Snowflake {
 		rob.penDown();
 
 		// #4. Set the robot’s speed to 5
-		rob.setSpeed(5);
+		rob.setSpeed(20);
 
 		// #5. use a for loop below to do everything ( #6, #7, #8, #9, #12, #13, #14 ) 6 times (use i as the counter)
-		
-			
+		rob.setPenColor(0,0,0);
+			for(int i = 0;i<6;i++) {
+				rob.move(50);
+				rob.turn(60);
+				if(i%2==0) {
+					rob.setPenColor(66, 108, 245);
+					
+				}
+				else {
+					rob.setPenColor(201, 55, 26);
+				}
+				for(int j=0;j<6;j++) {
+					rob.turn(-60);
+					rob.move(50);
+				}
+			}
 			// #6. Set the pen color to black
 
 			

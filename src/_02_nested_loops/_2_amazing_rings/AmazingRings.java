@@ -1,5 +1,7 @@
 package _02_nested_loops._2_amazing_rings;
 
+import java.awt.Canvas;
+
 import processing.core.PApplet;
 import processing.core.PImage;
 
@@ -37,24 +39,44 @@ import processing.core.PImage;
  *    These rings must also "bounce" off the sides of the window.
  */
 public class AmazingRings extends PApplet {
-    static final int WIDTH = 800;
+    static final int WIDTH = 1200;
     static final int HEIGHT = 600;
-
-    PImage waldo;
+    int x = 300;
+    int eggs=900;
+    int speed=7;
+    
 
     @Override
     public void settings() {
-
+    	size(WIDTH,HEIGHT);
     }
 
     @Override
     public void setup() {
-
+    	
+    	noFill();
     }
 
     @Override
     public void draw() {
-
+    	background(255,255,255);
+    	for(int i=10;i<600;i+=10) {
+    		ellipse(x,300,i,i);
+    	}
+    	
+    	for(int i=10;i<600;i+=10) {
+    		ellipse(eggs,300,i,i);
+    	}
+    	x+=speed;
+    	eggs-=speed;
+    	if(x>900) {
+    		speed=-speed;
+    	}
+    	if(x<300) {
+    		speed=-speed;
+    	}
+    	
+    	
     }
 
     static public void main(String[] args) {
