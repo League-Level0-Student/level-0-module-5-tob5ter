@@ -2,7 +2,7 @@ package _02_nested_loops._3_for_loop_gauntlet;
 
 public class for_loops_nest {
 	public static void main(String[] args) {
-		/*
+		
 		for(int i =0;i<101;i++) {
 			System.out.println(i);
 		}
@@ -34,6 +34,18 @@ public class for_loops_nest {
 			
 		}
 		}
-		*/
+		for(int k=0;k<9;k++){
+			System.out.print(k);
+			if(k%3==0){
+				System.out.println(k);
+			}
+		}
+		for(int l=0;l<100;l++){
+			System.out.print(l);
+			if(l%10==0){
+				System.our.println(l);
+			}
+		}
+		
 	}
 }

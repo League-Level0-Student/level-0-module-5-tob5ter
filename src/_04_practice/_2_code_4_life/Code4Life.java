@@ -17,10 +17,48 @@ public class Code4Life {
 	
 	
 	// 1. Ask the user how many hours they spent coding this week.
-
+	string coding = JOptionPane.showInputDialog("How many hours did you spend coding this week?");
+	int hours = Integer.parseInt(coding);
+	if(hours<=2){
+		JOptionPane.showMessageDialog("Get off of youtube and start coding instead!");
+	}
+	else if(hours>=3&&hours<=5){
+		JOptionPane.showMessageDialog("You are a code ninja keep up the good work!");
+	}
+	else if(hours>5){
+		playBatmanTheme();
+		displayBatman();
+	}
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-
+	SkillPractice skills = new SkillPractice();
+	skills.skill1();
+	skills.skill2();
+	skills.skill3();
+	skills.skill4();
+	skills.skill5();
+	void skill1(){
+		string money = JOptionPane.showInputDialog("How many dimes do you have?");
+		int dimes = Integer.parseInt(money)
+		JOptionPane.showMessageDialog("You have " + dimes +" dimes");
+		JOptionPane.showMessageDialog("You have "+ dimes*10 +" cents");
+		int length = JOptionPane.showInputDialog("How tall are you?");
+		int height = Integer.parseInt(length);
+		if(height<=60){
+			System.out.println("eat more food and drink more milk!")
+		}
+		}
+	void skill2(){
+		for(int i=0;i<30;i++){
+			if(i%3==0){
+				System.out.println(i);
+			}
+		}
+	}
+	void skill3(){
+		num1 = random()
+	}
+	}
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
 
