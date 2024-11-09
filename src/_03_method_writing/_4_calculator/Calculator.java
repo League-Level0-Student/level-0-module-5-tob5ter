@@ -12,9 +12,9 @@ public class Calculator {
 		int number2 = Integer.parseInt(input2);
 		int task = JOptionPane.showOptionDialog(null, "What do you choose?", "Calculator", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "divide", "multiply", "subtract", "add" }, null);
-
-		// 3) Call the correct method depending on what option the user chooses
 		
+		// 3) Call the correct method depending on what option the user chooses
+		System.out.print(task);
 		// 4) Call the result() method and put the answer in a pop-up
 	}
 	
